@@ -19,4 +19,4 @@ def Home():
     return response_json
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
