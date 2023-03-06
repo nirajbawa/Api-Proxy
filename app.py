@@ -7,8 +7,12 @@ app = Flask(__name__)
 
 CORS(app)
 
-@app.route("/api", methods=["GET"])
+@app.route("/", methods=["GET"])
 def Home():
+    return "hello"
+
+@app.route("/api", methods=["GET"])
+def api():
     url = request.args.get("url");
     print(url)
     Apiurl = url.replace("|", "&")
