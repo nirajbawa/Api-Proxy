@@ -17,6 +17,3 @@ def Home():
     response_json = response.json()
     print(response_json)
     return response_json
-
-if __name__ == "__main__":
-    app.run()
